@@ -17,49 +17,7 @@
         }
     </style> -->
     <style>
-        body
-        {
-            margin: 0px;
-        }
-        header
-        {
-            position: relative;
-            top: 0px;
-            width: 100%;
-            min-width: 1200px;
-            height: 5vh; 
-            background-color: white;
-
-        }
-        nav
-        {
-            position: relative;
-            top: 0px;
-            width: 1280px;
-            min-width: 1200px;
-            margin: 0px,auto;
-            height: 100%;
-            background-color:white;
-        }
-        main
-        {
-            position: relative;
-            top: 0px;
-            width: 100%;
-            min-width: 1200px;
-            height: 90vh; 
-            background-color:rgb(240, 240, 240);
-        }
-        footer
-        {
-            position: relative;
-            top: 0px;
-            width: 100%;
-            min-width: 1200px;
-            height: 5vh; 
-            background-color:black;
-        }
-       
+        
     </style>
 </head>
 <body>
@@ -68,14 +26,51 @@
     <div class="div2",id="div)">div영역2</div> -->
     <header class="header">
         <nav class="nav">
-            <h1>웹페이지 레이아웃 테스트</h1>
+            <div class="menu1">회사이름</div>
+            <div class="menu2">메인페이지</div>
+            <div class="menu3">회사 역사</div>
+            <div class="menu4">예약현황</div>
+            <div class="menu5">QnA</div>
         </nav>
     </header>
     <main class="main">
-        <section>안녕하세요</section>
-        <section>안녕하세요2</section>
-        <section>안녕하세요3</section>
-        <section>안녕하세요4</section>
+        <section class="section1"><img src="./restourant.jpg" class="img1" alt="레스토랑 전경.jpg"></section>
+        <section class="section2">
+            <div class="text1">xxx레스토랑</div>
+            <div class="img2"></div>
+            <div class="text2">
+                <div style="font-size: 20pt;">Chef of the Year. Mr.Gordon Ramsy</div>
+                <div style="font-family: 'Nanum Gothic', sans-serif; font-weight: 700;">
+                    안녕하세요 저희 레스토랑에 오신것을 환영합니다!</div>
+                <div style="font-family: 'Nanum Gothic', sans-serif; font-weight: 700;">
+                    항상 정성어린 음식으로 손님들을 대접해드리겠습니다.</div>
+            </div>
+        </section>
+        <section class="section3">
+            <form action="main2.html">
+                <div><label>이름</label><input type="text"></div>
+                <div><label>휴대폰번호</label><input type="text"></div>
+                <div> <label>인증번호</label><input type="text"></div>
+                <br>
+                <div><input type="submit" value="레스토랑 예약"></div>
+            </form>
+        </section>
+        <section class="section4">
+            <table>
+                <tr>
+                    <td>12번째</td>
+                    <td>메뉴</td>
+                </tr>
+                <tr>
+                    <td>12번째</td>
+                    <td>메뉴</td>
+                </tr>
+                <tr>
+                    <td>12번째</td>
+                    <td>메뉴</td>
+                </tr>
+            </table>
+        </section>
     </main>
     <footer class="footer"></footer>
 

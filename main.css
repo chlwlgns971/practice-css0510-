@@ -1,4 +1,168 @@
-div
+/*구글폰트 가져오기*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+body
 {
-    color: bisque;
+    margin: 0px;
+}
+.header
+{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    min-width: 1200px;
+    height: 5vh; 
+    background-color: white;
+
+}
+.nav
+{
+    position: relative;
+    top: 0px;
+    min-width: 1200px;
+    margin: 0px,auto;
+    height: 100%;
+    background-color:white;
+}
+.main
+{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 90vh; 
+    background-color:rgb(240, 240, 240);
+}
+.footer
+{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    min-width: 1200px;
+    height: 5vh; 
+    background-color:black;
+}
+.header .nav .menu1
+{
+    position: relative;
+    float: left;
+    width: 100px;
+    cursor: pointer; 
+}
+.header .nav .menu2
+{
+    position: relative;
+    float: left;
+    width: 100px;
+    cursor: pointer; 
+}
+.header .nav .menu3
+{
+    position: relative;
+    float: left;
+    width: 100px;
+    /* clear: both; */
+    /* cursor:pointer;을 사용하여 가져다대면 마우스 포인터 생성 */
+    /* cursor: no-drop; 선택을 못하게 막는 것 */
+    cursor: pointer; 
+}
+.header .nav .menu4
+{
+    position: relative;
+    float: left;
+    width: 100px;
+    cursor: pointer; 
+}
+.header .nav .menu5
+{
+    position: relative;
+    float: left;
+    width: 100px;
+    cursor: pointer; 
+}
+.main .section1
+{
+    position: relative;
+    margin: 0px auto; /*margin을 사용하여 중앙에 정렬*/
+    top: 0px;
+    width: 1280px;
+    height: 600px;
+    /*margin은 외부영역, padding은 내부영역*/
+    padding-top: 50px;
+    /*테두리를 표현할 때 사용*/
+    /* border: 1px solid blue; */
+}
+.main .section1 .img1
+{
+    width: 1280px;
+    height: 600px;
+}
+.main .section2
+{
+    position: relative;
+    margin: 0px auto; /*margin을 사용하여 중앙에 정렬*/
+    top: 0px;
+    width: 1280px;
+    height: 600px;
+    padding-top: 30px;
+}
+.main .section2 .text1
+{
+    /*글자크기*/
+  font-size: 16t;
+  /*폰트*/
+  font-family: 'Nanum Gothic', sans-serif;
+  /*폰트굵기*/
+  font-weight: 800;
+  /*글자위치*/
+  text-align: center;
+  /*절대위치 
+  position: absolute;
+  top: 20px; */
+}
+.main .section2 .img2
+{
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+   /* border: 1px solid black; */
+   border-radius: 50px;
+   background-image: url(./chef.jpg);
+   /*원 안에 사진이 100%보이게 채운다.*/
+   background-size: 100%;
+}
+.main .section2 .text2
+{
+    position: absolute;
+    top: 160px;
+    left: 400px;
+    width: 600px;
+    height: 400px;
+    font-family: 'Koulen', cursive;
+    font-weight: 400;
+    /*위치 잡을 땐 border사용하고 삭제*/
+    /* border: 1px solid black; */
+}
+.main .section3
+{
+    position: relative;
+    margin: 0px auto; /*margin을 사용하여 중앙에 정렬*/
+    top: 0px;
+    width: 1280px;
+    height: 200px;
+    padding-top: 30px;
+    /* border: 1px solid black; */
+}
+.main .section4
+{
+    position: relative;
+    margin: 0px auto; /*margin을 사용하여 중앙에 정렬*/
+    top: 0px;
+    width: 1280px;
+    height: 400px;
+    padding-top: 30px;
+    /* border: 1px solid black; */
 }
