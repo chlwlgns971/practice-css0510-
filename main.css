@@ -23,7 +23,7 @@ body
     min-width: 1200px;
     margin: 0px,auto;
     height: 100%;
-    background-color:rgb(199, 243, 212);
+    background-color:black;
 }
 .main
 {
@@ -43,17 +43,25 @@ body
     height: 5vh; 
     background-color:black;
 }
+.header .nav .menu_img
+{
+    float: left;
+    margin-left: 50px;
+    
+}
 .header .nav .menu1
 {
     position: relative;
     float: left;
     left: 5px;
     width: 100px;
+    margin-left: 100px;
     cursor: pointer; 
+    color: rgb(200, 200, 200);
 }
 .header .nav .menu1:hover
 {
-    color:brown;
+    color:white;
 }
 .header .nav .menu2
 {
@@ -61,10 +69,11 @@ body
     float: left;
     width: 100px;
     cursor: pointer; 
+    color: rgb(200, 200, 200);
 }
 .header .nav .menu2:hover
 {
-    color:brown;
+    color:white;
 }
 .header .nav .menu3
 {
@@ -75,12 +84,13 @@ body
     /* cursor:pointer;을 사용하여 가져다대면 마우스 포인터 생성 */
     /* cursor: no-drop; 선택을 못하게 막는 것 */
     cursor: pointer; 
+    color: rgb(200, 200, 200);
 }
 /* 마우스를 가져다 대면 동작하는 css */
 .header .nav .menu3:hover 
 {
     /* 마우스 커서를 가져다대면 글자색이 변하도록  */
-    color: brown;
+    color:white;
     /* 마우스 커서를 가져다대면 글자 배경색이 변하도록 */
     /* background-color: black; */
 }
@@ -95,10 +105,11 @@ body
     float: left;
     width: 100px;
     cursor: pointer; 
+    color: rgb(200, 200, 200);
 }
 .header .nav .menu4:hover
 {
-    color:brown;
+    color:white;
 }
 .header .nav .menu5
 {
@@ -106,10 +117,11 @@ body
     float: left;
     width: 100px;
     cursor: pointer; 
+    color: rgb(200, 200, 200);
 }
 .header .nav .menu5:hover
 {
-    color:brown;
+    color:white;
 }
 .main .section1
 {
@@ -194,7 +206,9 @@ body
     width: 1280px;
     height: 400px;
     padding-top: 30px;
-    /* border: 1px solid black; */
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction:column;
 }
 .notice
         {
@@ -227,3 +241,72 @@ body
             background-color: rgb(255, 255, 255);
             z-index: 3;
         }
+.main .section4 .left_range1
+{
+    width: 200px;
+    float: left;
+    margin-left: 70px;
+}
+.main .section4 .left_range1 .left_menu1 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+}
+.main .section4 .left_range2
+{
+    width: 200px;
+    float: left;
+}
+.main .section4 .left_range2 .left_menu2 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+}
+.main .section4 .middle_range1
+{
+    width: 200px;
+    float: left;
+    /* margin: 0 auto; */
+}
+.main .section4 .middle_range1 .middle_menu1 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+}
+.main .section4 .middle_range2
+{
+    width: 200px;
+    float: left;
+    /* margin: 0 auto; */
+}
+.main .section4 .middle_range2 .middle_menu2 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+}
+.main .section4 .right_range1
+{
+    width: 200px;
+    float: left;
+}
+.main .section4 .right_range1 .right_menu1 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+}
+.main .section4 .right_range2
+{
+    width: 200px;
+    float: left;
+}
+.main .section4 .right_range2 .right_menu2 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+}
