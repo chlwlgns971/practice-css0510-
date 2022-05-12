@@ -172,9 +172,18 @@ body
     height: 200px;
    /* border: 1px solid black; */
    border-radius: 50px;
+   padding: 15px 17px;
    background-image: url(./chef.jpg);
    /*원 안에 사진이 100%보이게 채운다.*/
    background-size: 100%;
+}
+.main .section2 .img2:hover
+{
+     /* transform을 사용하여 이미지 변환
+    scale(1.5)는 마우스를 가져다대면 1.5배 확대 */
+    transform: scale(1.5);
+     /* 1초동안 transform이 실행 */
+    transition-duration: 1s;
 }
 .main .section2 .text2
 {

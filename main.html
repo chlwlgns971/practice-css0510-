@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" nonce="28271ef0cac24252a8a06389402" src="//local.adguard.org?ts=1652274261121&amp;type=content-script&amp;dmn=download.mail.naver.com&amp;pth=%2Ffile%2Fdownload%2Feach%2F%3FattachType%3Dnormal%26mailSN%3D16472%26attachIndex%3D4%26virus%3D1%26domain%3Dmail.naver.com%26u%3Dwkdehd97&amp;app=whale.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;uag="></script>
-<script type="text/javascript" nonce="28271ef0cac24252a8a06389402" src="//local.adguard.org?ts=1652274261121&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="stylesheet" href="main.css">
+    <script type="text/javascript" nonce="28271ef0cac24252a8a06389402" src="//local.adguard.org?ts=1652360717638&amp;type=content-script&amp;dmn=download.mail.naver.com&amp;pth=%2Ffile%2Fdownload%2Feach%2F%3FattachType%3Dnormal%26mailSN%3D16486%26attachIndex%3D4%26virus%3D1%26domain%3Dmail.naver.com%26u%3Dwkdehd97&amp;app=whale.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;uag="></script>
+<script type="text/javascript" nonce="28271ef0cac24252a8a06389402" src="//local.adguard.org?ts=1652360717638&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="stylesheet" href="main.css">
     <title>Document</title>
     <!-- <style>
         body
@@ -18,7 +18,48 @@
         }
     </style> -->
     <style>
-        
+        /* 반응형 웹페이지를 제작할 때 @media all을 사용 */
+        /* max-with: 1280px은 1280px이하일 때 동작한다는 의미 */
+        @media all and (max-width:1280px)
+        {
+            /* -ms: IE에서 사용되는 설정
+            -webkit: 크롬과 사파리에서 사용되는 설정 */
+            .header .nav .menu2
+            {
+                display: none;
+            }
+            .header .nav .menu3
+            {
+                display: none;
+            }
+            .header .nav .menu4
+            {
+                display: none;
+            }
+            .header .nav .menu5
+            {
+                display: none;
+            }
+        }
+        .main .section1 .img1
+        {
+            animation-name: myanimation;
+            animation-duration: 3s;
+        }
+        /* 애니메이션 중괄호는 항상 이름 옆에 위치해야함 */
+        @keyframes myanimation{
+            /* from은 애니메이션 시작 */
+            from{
+               margin-left: 1px;
+            }
+            50%{
+                margin-left: 150px;
+            }
+            /* to는 애니메이션 끝 */
+            to{
+                margin-left: 0px;
+            }
+        }
     </style>
 </head>
 <body>
