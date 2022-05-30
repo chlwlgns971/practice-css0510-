@@ -20,6 +20,10 @@ body
 .nav
 {
     position: relative;
+<<<<<<< HEAD
+=======
+    top: 0px;
+>>>>>>> ae122d49843d6df13480b7058b646761ce6c0cb3
     min-width: 1200px;
     margin: 0px,auto;
     height: 100%;
@@ -50,7 +54,11 @@ body
 }
 .header .nav .menu1
 {
+<<<<<<< HEAD
     top: 15px;
+=======
+    top: 10px;
+>>>>>>> ae122d49843d6df13480b7058b646761ce6c0cb3
     position: relative;
     float: left;
     left: 5px;
@@ -65,7 +73,11 @@ body
 }
 .header .nav .menu2
 {
+<<<<<<< HEAD
     top: 15px;
+=======
+    top: 10px;
+>>>>>>> ae122d49843d6df13480b7058b646761ce6c0cb3
     position: relative;
     float: left;
     width: 100px;
@@ -78,7 +90,11 @@ body
 }
 .header .nav .menu3
 {
+<<<<<<< HEAD
     top: 15px;
+=======
+    top: 10px;
+>>>>>>> ae122d49843d6df13480b7058b646761ce6c0cb3
     position: relative;
     float: left;
     width: 100px;
@@ -103,7 +119,11 @@ body
 }
 .header .nav .menu4
 {
+<<<<<<< HEAD
     top: 15px;
+=======
+    top: 10px;
+>>>>>>> ae122d49843d6df13480b7058b646761ce6c0cb3
     position: relative;
     float: left;
     width: 100px;
@@ -116,8 +136,13 @@ body
 }
 .header .nav .menu5
 {
+<<<<<<< HEAD
     top: 15px;
     position: relative;
+=======
+    position: relative;
+    top: 10px;
+>>>>>>> ae122d49843d6df13480b7058b646761ce6c0cb3
     float: left;
     width: 100px;
     cursor: pointer; 
