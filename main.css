@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 body
 {
     margin: 0px;
@@ -13,17 +14,16 @@ body
     width: 100%;
     min-width: 1200px;
     height: 5vh; 
-    background-color: white;
+    background-color:white;
 
 }
 .nav
 {
     position: relative;
-    top: 0px;
     min-width: 1200px;
     margin: 0px,auto;
     height: 100%;
-    background-color:white;
+    background-color:black;
 }
 .main
 {
@@ -32,7 +32,7 @@ body
     width: 100%;
     min-width: 1200px;
     min-height: 90vh; 
-    background-color:rgb(240, 240, 240);
+    background-color:rgb(255, 255, 255);
 }
 .footer
 {
@@ -43,22 +43,42 @@ body
     height: 5vh; 
     background-color:black;
 }
+.header .nav .menu_img
+{
+    float: left;
+    margin-left: 50px;
+}
 .header .nav .menu1
 {
+    top: 15px;
     position: relative;
     float: left;
+    left: 5px;
     width: 100px;
+    margin-left: 100px;
     cursor: pointer; 
+    color: rgb(200, 200, 200);
+}
+.header .nav .menu1:hover
+{
+    color:white;
 }
 .header .nav .menu2
 {
+    top: 15px;
     position: relative;
     float: left;
     width: 100px;
     cursor: pointer; 
+    color: rgb(200, 200, 200);
+}
+.header .nav .menu2:hover
+{
+    color:white;
 }
 .header .nav .menu3
 {
+    top: 15px;
     position: relative;
     float: left;
     width: 100px;
@@ -66,20 +86,46 @@ body
     /* cursor:pointer;을 사용하여 가져다대면 마우스 포인터 생성 */
     /* cursor: no-drop; 선택을 못하게 막는 것 */
     cursor: pointer; 
+    color: rgb(200, 200, 200);
+}
+/* 마우스를 가져다 대면 동작하는 css */
+.header .nav .menu3:hover 
+{
+    /* 마우스 커서를 가져다대면 글자색이 변하도록  */
+    color:white;
+    /* 마우스 커서를 가져다대면 글자 배경색이 변하도록 */
+    /* background-color: black; */
+}
+/* 마우스를 클릭하면 동작하는 css */
+.header .nav .menu3:active
+{
+    color: red;
 }
 .header .nav .menu4
 {
+    top: 15px;
     position: relative;
     float: left;
     width: 100px;
     cursor: pointer; 
+    color: rgb(200, 200, 200);
+}
+.header .nav .menu4:hover
+{
+    color:white;
 }
 .header .nav .menu5
 {
+    top: 15px;
     position: relative;
     float: left;
     width: 100px;
     cursor: pointer; 
+    color: rgb(200, 200, 200);
+}
+.header .nav .menu5:hover
+{
+    color:white;
 }
 .main .section1
 {
@@ -96,13 +142,13 @@ body
 .main .section1 .img1
 {
     width: 1280px;
-    height: 600px;
+    height: 650px;
 }
 .main .section2
 {
     position: relative;
     margin: 0px auto; /*margin을 사용하여 중앙에 정렬*/
-    top: 0px;
+    top: 50px;
     width: 1280px;
     height: 600px;
     padding-top: 30px;
@@ -110,13 +156,14 @@ body
 .main .section2 .text1
 {
     /*글자크기*/
-  font-size: 16t;
+  font-size: 50pt;
   /*폰트*/
-  font-family: 'Nanum Gothic', sans-serif;
-  /*폰트굵기*/
+  font-family: 'Nanum Brush Script', cursive;
   font-weight: 800;
   /*글자위치*/
   text-align: center;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
   /*절대위치 
   position: absolute;
   top: 20px; */
@@ -124,25 +171,27 @@ body
 .main .section2 .img2
 {
     position: absolute;
-    top: 160px;
-    left: 20px;
+    top: 240px;
     width: 200px;
     height: 200px;
    /* border: 1px solid black; */
    border-radius: 50px;
+   padding: 15px 17px;
    background-image: url(./chef.jpg);
    /*원 안에 사진이 100%보이게 채운다.*/
    background-size: 100%;
+   margin-left: 200px;
 }
 .main .section2 .text2
 {
     position: absolute;
-    top: 160px;
-    left: 400px;
+    top: 260px;
+    left: 500px;
     width: 600px;
     height: 400px;
     font-family: 'Koulen', cursive;
     font-weight: 400;
+    letter-spacing: 2px;
     /*위치 잡을 땐 border사용하고 삭제*/
     /* border: 1px solid black; */
 }
@@ -154,7 +203,91 @@ body
     width: 1280px;
     height: 200px;
     padding-top: 30px;
+    display: flex;
+    flex-direction:column;
     /* border: 1px solid black; */
+}
+.main .section3 .food1
+{
+    position: absolute;
+    margin-left: 40px;
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    background-image: url(./food1.jpg);
+    background-size: 100%;
+}
+.main .section3 .food1:hover
+{
+    transform: scale(1.5);
+     /* 1초동안 transform이 실행 */
+    transition-duration: 1s;
+    z-index: 3;
+    border-radius: 50px;
+}
+.main .section3 .food2
+{
+    position: absolute;
+    margin-left: 40px;
+    left: 300px;
+    width: 300px;
+    height: 200px;
+   /* border: 1px solid black; */
+   /* border-radius: 20px; */
+   /* padding: 15px 17px; */
+   background-image: url(./food2.jpg);
+   /*원 안에 사진이 100%보이게 채운다.*/
+   background-size: 100%;
+}
+.main .section3 .food2:hover
+{
+    transform: scale(1.5);
+     /* 1초동안 transform이 실행 */
+    transition-duration: 1s;
+    z-index: 3;
+    border-radius: 50px;
+}
+.main .section3 .food3
+{
+    position: absolute;
+    margin-left: 40px;
+    left: 600px;
+    width: 300px;
+    height: 200px;
+   /* border: 1px solid black; */
+   /* border-radius: 20px; */
+   /* padding: 15px 17px; */
+   background-image: url(./food3.jpg);
+   /*원 안에 사진이 100%보이게 채운다.*/
+   background-size: 100%;
+}
+.main .section3 .food3:hover
+{
+    transform: scale(1.5);
+     /* 1초동안 transform이 실행 */
+    transition-duration: 1s;
+    z-index: 3;
+    border-radius: 50px;
+}
+.main .section3 .food4
+{
+    position: absolute;
+    margin-left: 40px;
+    left: 900px;
+    width: 300px;
+    height: 200px;
+    border-top-right-radius: 20px;
+    background-image: url(./food4.jpg);
+   /*원 안에 사진이 100%보이게 채운다.*/
+    background-size: 100%;
+}
+.main .section3 .food4:hover
+{
+    transform: scale(1.5);
+     /* 1초동안 transform이 실행 */
+    transition-duration: 1s;
+    border-radius: 50px;
+    z-index: 3;
 }
 .main .section4
 {
@@ -164,5 +297,108 @@ body
     width: 1280px;
     height: 400px;
     padding-top: 30px;
-    /* border: 1px solid black; */
+    border-top: 1px solid gray;
+    /* 가로방향으로 쌓아올릴 때 flex와 coulumn방향으로 설정 */
+    display: flex;
+    flex-direction:column;
+}
+.notice
+        {
+            /* visibility: hidden은 자리를 차지하면서 안보이게 */
+            /* visibility: hidden;  */
+            /* display: none은 자리를 차지안하면서 안보이게 */
+            display: none;
+            /* display: block; */
+        }
+        /* 공지사항 백그라운드 */
+        .notice_background
+        {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            z-index: 2;
+            opacity: 0.3;
+        }
+        /* 공지사항 css */
+        .notice_border 
+        {
+            position:relative;
+            margin: 0 auto;
+            top: 22vh;
+            width: 500px;
+            height: 500px;
+            background-color: rgb(255, 255, 255);
+            z-index: 3;
+        }
+.main .section4 .left_range1
+{
+    width: 240px;
+    float: left;
+    margin-left: 80px;
+}
+.main .section4 .left_range1 .left_menu1 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+}
+.main .section4 .left_range2
+{
+    width: 240px;
+    float: left;
+}
+.main .section4 .left_range2 .left_menu2 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+}
+.main .section4 .middle_range1
+{
+    width: 240px;
+    float: left;
+    /* margin: 0 auto; */
+}
+.main .section4 .middle_range1 .middle_menu1 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+}
+.main .section4 .middle_range2
+{
+    width: 240px;
+    float: left;
+    /* margin: 0 auto; */
+}
+.main .section4 .middle_range2 .middle_menu2 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+}
+.main .section4 .right_range1
+{
+    width: 240px;
+    float: left;
+}
+.main .section4 .right_range1 .right_menu1 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+}
+.main .section4 .right_range2
+{
+    width: 200px;
+    float: left;
+}
+.main .section4 .right_range2 .right_menu2 a
+{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
 }
